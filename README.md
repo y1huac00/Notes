@@ -10,6 +10,42 @@ os.rename(source,destination)
 ```
 file_namelist = [os.path.basename(filepath) for filepath in glob.glob(./Directory/*)]
 ```
+3. Chaining comparison:
+```
+if (a < b < c):
+    print("Hi")
+```
+is equivalent to
+```
+if (a < b and b < c):
+    print("Hi")
+```
+4. Multiply strings and lists:
+```
+[1,2]*3
+>>> [1,2,1,2,1,2]
+'H'*3
+>>> 'HHH'
+```
+5. Combine dictionaries:
+```
+a = {'a':1}
+b = {'b':2}
+c = {**a, **b}
+```
+6. Reverse a string:
+```
+reversed = 'ABC'[::-1]
+```
+7. Combine string elements in a list:
+```
+joined = ','.join(['A','B','C'])
+```
+8. Switch keys and values in a dictionary:
+```
+dict(zip(dic.values(), dic.keys()))
+```
+
 ## pandas
 1. Change column names:
 ```
