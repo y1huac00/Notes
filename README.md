@@ -21,11 +21,11 @@ df['Daily Return'] = df['Close'].pct_change(1)
 ```
 3. Change from timestamp (ms) to UTC date:
 ```
-df['Date'] = df.apply(lambda x: datetime.datetime.utcfromtimestamp(x['Date]/1000), axis=1).strftime('%Y-%m-%d')
+df['Date'] = df.apply(lambda x: datetime.datetime.utcfromtimestamp(x['Date']/1000), axis=1).strftime('%Y-%m-%d')
 ```
 4. Change from timestamp (s) to UTC date:
 ```
-df['Date'] = df.apply(lambda x: datetime.datetime.utcfromtimestamp(x['Date]), axis=1).strftime('%Y-%m-%d')
+df['Date'] = df.apply(lambda x: datetime.datetime.utcfromtimestamp(x['Date']), axis=1).strftime('%Y-%m-%d')
 ```
 ## ccxt
 1. Get a exchange object by corresponding exchange ID:
