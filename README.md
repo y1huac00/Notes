@@ -99,7 +99,14 @@ with open('./pickle.py', 'rb') as fi:
 ## datetime
 1.
 
-
+## matplotlib
+1. plot an image:
+```
+fig = plt.figure(figsize=(7,7))
+img = mpimg.imread(PATH)
+plt.imshow(img)
+plt.show()
+```
 
 
 
